@@ -4,6 +4,7 @@ version = "0.1.0"
 edition = "2021"
 license = "Apache-2.0"
 description = "collection of mathematical functions and resources to assist in solving a wide range of topics"
+repository = "https://github.com/JosephGurak/mathsharp"
 
 [dependencies]
 
