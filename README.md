@@ -21,16 +21,39 @@ fn main() {
 ```
 
 ## Roadmap
+ 
 
-### Official Roadmap Coming soon! 
+MathSharp aims to add areas of mathematics in blocks each with consistent monthly updates.
 
-MathSharp will be starting with unit conversions and work on adding areas of 
-mathematics in consistent updates. Roadmap will be released February 1st 2025
-alongside its next minor update. 
+### BLOCK 1:  Unit Conversions
+
+```
+    March 1st Update:  
+                        length, mass, volume, area, time, pressure, energy, power
+```
+
+### BLOCK 2: Geometric Calculations
+
+```
+    April 1st Update: 
+                        perimeter, area, volume, triangles, circles, quadrilaterals
+                        
+    May 1st Update:
+                        trigonometry
+```
+
+### BLOCK 3: Algebra 
+
+```
+    June 1st Update: TBD
+                        
+```
 
 
+#### More Blocks will be added and existing ones updated as MathSharp progresses towards its goal
 
-
+### Website On its way! 
+Around the time of BLOCK 3 MathSharp website will be launched using the Dioxus framework to create a place for more documentation, math resources and a special surprise!
 
 
 

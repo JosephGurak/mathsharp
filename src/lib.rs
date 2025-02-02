@@ -11,6 +11,7 @@ pub use self::temperature::fahrenheit_kelvin;
 pub use self::temperature::kelvin_fahrenheit;
 pub use self::temperature::kelvin_celsius;
 
+pub use self::length::inches_feet;
 
 pub mod temperature {
     /// Converts Fahrenheit to Celsius.
@@ -125,3 +126,20 @@ pub mod temperature {
 
 }
 
+pub mod length {
+
+    /// Converts Inches to Feet.
+    ///
+    /// #Examples
+    ///
+    /// ```
+    /// let inches = 36.0;
+    /// let answer = mathsharp::inches_feet(inches);
+    ///
+    /// assert_eq!(3.0, answer);
+    /// ```
+    pub fn inches_feet(inches: f32) -> f32 {
+        let feet = inches / 12.0;
+        feet
+    }
+}
