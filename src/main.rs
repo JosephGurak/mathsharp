@@ -1,5 +1,5 @@
-use mathsharp::temperature::celsius_fahrenheit;
-use mathsharp::temperature::fahrenheit_celsius;
+use mathsharp::celsius_fahrenheit;
+use mathsharp::fahrenheit_celsius;
 use mathsharp::length::inches_feet;
 use mathsharp::perimeter::triangle;
 
