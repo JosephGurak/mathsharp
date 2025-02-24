@@ -1,9 +1,20 @@
-use mathsharp::celsius_fahrenheit;
-use mathsharp::fahrenheit_celsius;
+use mathsharp::temperature::celsius_fahrenheit;
+use mathsharp::temperature::fahrenheit_celsius;
+use mathsharp::length::inches_feet;
+use mathsharp::perimeter::triangle;
 
 
 fn main() {
 
+    //
+    
+    triangle();
+
+    let inches = 12.0;
+    let to_feet = inches_feet(inches);
+    println!("Feet equals: {}", to_feet);
+
+    //
 
     let from_fahrenheit = 32.0;
     let to_celsius = fahrenheit_celsius(from_fahrenheit);
