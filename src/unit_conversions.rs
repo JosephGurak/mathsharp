@@ -66,20 +66,190 @@ pub mod length {
         let inches = mile * 63360.0;
         inches
     }
-    //still need to do imperial to metric and vice versa conversions
+    //
 
-    //imperial to metric
-    pub fn inches_millimeters(inches: f32) -> f32 {
-        let millimeters = inches * 25.4;
-        millimeters
+    // imperial to metric
+
+    // inches
+
+    pub fn inches_millimeter(inches: f32) -> f32 {
+        let millimeter = inches * 25.4;
+        millimeter
     }
 
-    //metric to imperial
-    pub fn millimeters_inches(millimeter: f32) -> f32 {
+    pub fn inches_centimeter(inches: f32) -> f32 {
+        let centimeter = inches * 2.54;
+        centimeter
+    }
+
+    pub fn inches_meter(inches: f32) -> f32 {
+        let meter = inches * 0.0254;
+        meter
+    }
+
+    pub fn inches_kilometer(inches: f32) -> f32 {
+        let kilometer = inches * 0.0000254;
+        kilometer
+    }
+
+    // feet
+
+    pub fn feet_millimeter(feet: f32) -> f32 {
+        let millimeter = feet * 304.8;
+        millimeter
+    }
+
+    pub fn feet_centimeter(feet: f32) -> f32 {
+        let centimeter = feet * 30.48;
+        centimeter
+    }
+
+    pub fn feet_meter(feet: f32) -> f32 {
+        let meter = feet * 0.3048;
+        meter
+    }
+
+    pub fn feet_kilometer(feet: f32) -> f32 {
+        let kilometer = feet * 0.0003048;
+        kilometer
+    }
+
+    // yards
+
+    pub fn yards_millimeter(yards: f32) -> f32 {
+        let millimeter = yards * 914.4;
+        millimeter
+    }
+
+    pub fn yards_centimeter(yards: f32) -> f32 {
+        let centimeter = yards * 91.44;
+        centimeter
+    }
+
+    pub fn yards_meter(yards: f32) -> f32 {
+        let meter = yards * 0.9144;
+        meter
+    }
+
+    pub fn yards_kilometer(yards: f32) -> f32 {
+        let kilometer = yards * 0.0009144;
+        kilometer
+    }
+
+    // miles
+
+    pub fn miles_millimeter(miles: f64) -> f64 {
+        let millimeter = miles * 1_609_344.0;
+        millimeter
+    }
+
+    pub fn miles_centimeter(miles: f64) -> f64 {
+        let centimeter = miles * 160_934.40;
+        centimeter
+    }
+
+    pub fn miles_meter(miles: f32) -> f32 {
+        let meter = miles * 1609.3440;
+        meter
+    }
+
+    pub fn miles_kilometer(miles: f32) -> f32 {
+        let kilometer = miles * 1.6093440;
+        kilometer
+    }
+
+
+    // metric to imperial 
+
+    // millimeter
+
+    pub fn millimeter_inches(millimeter: f32) -> f32 {
         let inches = millimeter / 25.4;
         inches
     }
 
+    pub fn millimeter_feet(millimeter: f32) -> f32 {
+        let feet = millimeter / 304.8;
+        feet
+    }
+
+    pub fn millimeter_yards(millimeter: f32) -> f32 {
+        let yards = millimeter / 914.4;
+        yards
+    }
+
+    pub fn millimeter_miles(millimeter: f32) -> f32 {
+        let miles = millimeter / 1_609_344.0;
+        miles
+    }
+
+    // centimeter
+
+    pub fn centimeter_inches(centimeter: f32) -> f32 {
+        let inches = centimeter / 2.54;
+        inches
+    }
+
+    pub fn centimeter_feet(centimeter: f32) -> f32 {
+        let feet = centimeter / 30.48;
+        feet
+    }
+
+    pub fn centimeter_yards(centimeter: f32) -> f32 {
+        let yards = centimeter / 91.44;
+        yards
+    }
+
+    pub fn centimeter_miles(centimeter: f32) -> f32 {
+        let miles = centimeter / 160_934.0;
+        miles
+    }
+
+    // meter
+
+    pub fn meter_inches(meter: f32) -> f32 {
+        let inches = meter / 0.0254;
+        inches
+    }
+
+    pub fn meter_feet(meter: f32) -> f32 {
+        let feet = meter / 0.3048;
+        feet
+    }
+
+    pub fn meter_yards(meter: f32) -> f32 {
+        let yards = meter / 0.9144;
+        yards
+    }
+
+    pub fn meter_miles(meter: f32) -> f32 {
+        let miles = meter / 1609.344;
+        miles
+    }
+
+    // kilometers
+
+    pub fn kilometer_inches(kilometer: f32) -> f32 {
+        let inches = kilometer / 0.0000254;
+        inches
+    }
+
+    pub fn kilometer_feet(kilometer: f32) -> f32 {
+        let feet = kilometer / 0.0003048;
+        feet
+    }
+
+    pub fn kilometer_yards(kilometer: f32) -> f32 {
+        let yards = kilometer / 0.0009144;
+        yards
+    }
+
+    pub fn kilometer_miles(kilometer: f32) -> f32 {
+        let miles = kilometer / 1.609344;
+        miles
+    }
+
+    //
     // Metric
     pub fn millimeter_centimeter(millimeter: f32) -> f32 {
         let centimeter = millimeter / 10.0;
@@ -145,7 +315,7 @@ pub mod length {
 }
 
 pub mod mass {
-
+    
 }
 
 pub mod volume {
