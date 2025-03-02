@@ -29,17 +29,18 @@ MathSharp aims to add areas of mathematics in blocks each with consistent monthl
 
 ```
     March 1st Update:  
-                        length, mass, volume, area, time, pressure, energy, power
+                length, mass, volume, area, time, pressure, energy, power
+         * Due to work time delays mass & volume will be added in a following patch *
 ```
 
 ### BLOCK 2: Geometric Calculations
 
 ```
     April 1st Update: 
-                        perimeter, area, volume, triangles, circles, quadrilaterals
+                perimeter, area, volume, triangles, circles, quadrilaterals
                         
     May 1st Update:
-                        trigonometry
+                trigonometry
 ```
 
 ### BLOCK 3: Algebra 
