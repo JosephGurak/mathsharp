@@ -25,7 +25,9 @@ pub use self::unit_conversions::temperature::kelvin_fahrenheit;
 /////////////////////////////////////////////////////
 mod geometric_calculations;
 
-pub use geometric_calculations::perimeter;
+pub use self::geometric_calculations::perimeter;
+pub use self::geometric_calculations::areas;
+pub use self::geometric_calculations::volumes;
 
 
 
