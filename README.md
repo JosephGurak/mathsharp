@@ -1,4 +1,3 @@
-# mathsharp
 Rust Crate for Working with Mathematical Operations 
 
 The Goal of mathsharp is to provide a fast and friendly experience for
@@ -9,11 +8,13 @@ calculus and beyond.
 
 Below example demonstrates using a temperature conversion function.
 
-```
+```rust
 use mathsharp::fahrenheit_celsius;
 
 fn main() {
+    //declare value you want to convert
     let from_fahrenheit = 32.0;
+
     let to_celsius = fahrenheit_celsius(from_fahrenheit);
     
     println!("{} fahrenheit is equal to {} Celsius", from_fahrenheit, to_celsius);   
@@ -27,27 +28,27 @@ MathSharp aims to add areas of mathematics in blocks each with consistent monthl
 
 ### BLOCK 1:  Unit Conversions
 
-```
-    March 1st Update:  
-                        length, mass, volume, area, time, pressure, energy, power
-```
+    March 1st Update:
+    ---
+    length, mass, volume, area, time, pressure, energy, power
+
 
 ### BLOCK 2: Geometric Calculations
 
-```
     April 1st Update: 
-                        perimeter, area, volume, triangles, circles, quadrilaterals
-                        
+    ---
+    perimeter, area, volume, triangles, circles, quadrilaterals
+                
     May 1st Update:
-                        trigonometry
-```
+    --- 
+    trigonometry
+
 
 ### BLOCK 3: Algebra 
 
-```
     June 1st Update: TBD
                         
-```
+
 
 
 #### More Blocks will be added and existing ones updated as MathSharp progresses towards its goal
