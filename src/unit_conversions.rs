@@ -8,7 +8,7 @@ pub mod length {
     ///
     /// ```
     /// let inches = 36.0;
-    /// let answer = mathsharp::inches_feet(inches);
+    /// let answer = mathsharp::length::inches_feet(inches);
     ///
     /// assert_eq!(3.0, answer);
     /// ```
@@ -315,11 +315,113 @@ pub mod length {
 }
 
 pub mod mass {
+    // kilogram
+    pub fn kilogram_gram(kilogram: f32) -> f32 {
+        let gram = kilogram * 1000.0;
+        gram
+    }
+
+    pub fn kilogram_milligram(kilogram: f64) -> f64 {
+        let milligram = kilogram * 1000000.0;
+        milligram
+    }
+
+    pub fn kilogram_pounds(kilogram: f32) -> f32 {
+        let pounds = kilogram * 2.20462;
+        pounds
+    }   
     
+    //gram
+    pub fn gram_kilogram(gram: f32) -> f32 {
+        let kilogram = gram / 1000.0;
+        kilogram
+    }
+
+    pub fn gram_milligram(gram: f32) -> f32 {
+        let milligram = gram * 1000.0;
+        milligram
+    }
+
+    pub fn gram_pounds(gram: f32) -> f32 {
+        let pounds = gram * 0.0022;
+        pounds
+    }
+    //milligram
+    pub fn milligram_gram(milligram: f32) -> f32 {
+        let gram = milligram * 0.001;
+        gram
+    }
+
+    pub fn milligram_kilogram(milligram: f32) -> f32 {
+        let kilogram = milligram / 1000000.0;
+        kilogram
+    }
+
+    //pounds
+    pub fn pounds_ounces(pounds: f32) -> f32 {
+        let ounces = pounds * 16.0;
+        ounces
+    }
+
+    pub fn pounds_kilograms(pounds: f32) -> f32 {
+        let kilograms = pounds / 2.20462;
+        kilograms
+    }
+
+    pub fn pounds_grams(pounds: f32) -> f32 {
+        let grams = pounds * 0.00220462;
+        grams
+    }
+
+    //ounces
+    pub fn ounces_pounds(ounces: f32) -> f32 {
+        let pounds = ounces / 16.0;
+        pounds
+    }
 }
 
 pub mod volume {
+    // metric liquid volume 
+    pub fn milliliter_liter(milliliter: f32) -> f32 {
+        let liter = milliliter / 1000.0;
+        liter
+    }
 
+    pub fn liter_milliliter(liter: f32) ->  f32 {
+        let milliliter = liter * 1000.0;
+        milliliter
+    }
+
+    pub fn liters_to_us_liquid_gallon(liters:f32) -> f32 {
+        let gallons = liters / 3.785412;
+        gallons
+    }
+
+    pub fn liters_to_us_dry_gallon(liters:f32) -> f32 {
+        let gallons = liters / 4.404884;
+        gallons
+    }
+
+    
+    //imperial/us
+    pub fn us_liquid_gallon_to_liters(gallons:f32) -> f32 {
+        let liters = gallons * 3.785412;
+        liters
+    }
+    
+    pub fn us_dry_gallon_to_liters(gallons:f32) -> f32 {
+        let liters = gallons * 4.404884;
+        liters
+    }
+
+    pub fn gallon_to_fluid_ounces(gallons:f32) -> f32 {
+        let fluid_ounces = gallons / 128.0;
+        fluid_ounces
+    }
+
+    
+
+    
 }
 
 
