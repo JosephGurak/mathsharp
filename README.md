@@ -20,6 +20,9 @@ fn main() {
     println!("{} fahrenheit is equal to {} Celsius", from_fahrenheit, to_celsius);   
 }
 ```
+## News
+    Version 0.5.0 brings the rest of the Block 1 update content along with the April update in Block 2. 
+    Behind the scenes mathsharp is developing tools for the future algebra and calculus Blocks. 
 
 ## Roadmap
  
