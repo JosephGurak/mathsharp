@@ -29,18 +29,18 @@ MathSharp aims to add areas of mathematics in blocks each with consistent monthl
 ### BLOCK 1:  Unit Conversions
 
     March 1st Update:
-    ---
+    
     length, mass, volume, area, time, pressure, energy, power
 
 
 ### BLOCK 2: Geometric Calculations
 
     April 1st Update: 
-    ---
+    
     perimeter, area, volume, triangles, circles, quadrilaterals
                 
     May 1st Update:
-    --- 
+    
     trigonometry
 
 
