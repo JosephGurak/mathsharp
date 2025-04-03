@@ -2,10 +2,15 @@ use mathsharp::celsius_fahrenheit;
 use mathsharp::fahrenheit_celsius;
 use mathsharp::length::inches_feet;
 use mathsharp::perimeter::*;
+use mathsharp::algebra_1::*;
+
 
 
 fn main() {
 
+    testing(); // from algebra\test
+
+    //
     let circle_test = perimeter_circle(4.0);
     println!("{circle_test} units");
 

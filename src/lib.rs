@@ -23,13 +23,22 @@ pub use self::unit_conversions::temperature::kelvin_celsius;
 pub use self::unit_conversions::temperature::kelvin_fahrenheit;
 
 /////////////////////////////////////////////////////
-mod geometric_calculations;
+mod geometry {
+    pub mod geometric_calculations;
+}
 
-pub use self::geometric_calculations::perimeter;
-pub use self::geometric_calculations::areas;
-pub use self::geometric_calculations::volumes;
+pub use self::geometry::geometric_calculations::perimeter;
+pub use self::geometry::geometric_calculations::areas;
+pub use self::geometry::geometric_calculations::volumes;
 
 
 
+/////////////////////////////////////////////////////
+// testing calling modules from nested
+mod algebra {
+    pub mod test;
+}
+
+pub use self::algebra::test::algebra_1;
 
 
