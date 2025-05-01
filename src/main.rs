@@ -2,13 +2,18 @@ use mathsharp::celsius_fahrenheit;
 use mathsharp::fahrenheit_celsius;
 use mathsharp::length::inches_feet;
 use mathsharp::perimeter::*;
-use mathsharp::algebra_1::*;
 
+
+use mathsharp::trig::*;
 
 
 fn main() {
 
-    testing(); // from algebra\test
+
+    let tri_test = Triangle::new(45.0, 45.0).remaining_degrees();
+    println!("{}", tri_test);
+    
+ 
 
     //
     let circle_test = perimeter_circle(4.0);
