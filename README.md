@@ -21,8 +21,10 @@ fn main() {
 }
 ```
 ## News
-    Version 0.5.0 brings the rest of the Block 1 update content along with the April update in Block 2. 
-    Behind the scenes mathsharp is developing tools for the future algebra and calculus Blocks. 
+    In an effort to add more versatility to mathsharp, V0.6.0 release 
+    has been pushed back one week. V0.6.0 will bring generics to all current functions 
+    along with the start of the trigonometry module. 
+    
 
 ## Roadmap
  
@@ -42,7 +44,7 @@ MathSharp aims to add areas of mathematics in blocks each with consistent monthl
     
     perimeter, area, volume, triangles, circles, quadrilaterals
                 
-    May 1st Update:
+    May 1st Update: ( Delayed to May 8th)
     
     trigonometry
 
