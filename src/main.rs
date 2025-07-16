@@ -9,9 +9,9 @@ use mathsharp::trig::*;
 
 fn main() {
 
-
-    let tri_test = Triangle::new(45.0, 45.0).remaining_degrees();
-    println!("{}", tri_test);
+    
+    let tri_test = RightTriangle::two_angles(45.0, 45.0);
+    println!("{}", tri_test.remaining_degrees());
     
  
 
