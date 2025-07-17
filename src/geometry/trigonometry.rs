@@ -6,18 +6,34 @@ pub mod trig {
     // look into how best to construct the impl, assicated functions, constructor fns for triangle
     // go back and refactor other parts of code for generics 
 
+    use std::fmt::{Display, Formatter, Result};
+
     #[derive(Debug)]
     enum TriangleDetails {
         TwoAngles(f32, f32),
-        ThreeAngles(f32, f32, f32),
         TwoSides(f32, f32),
-        ThreeSides(f32, f32, f32),
+        
+    }
+
+    impl Display for TriangleDetails {
+        fn fmt(&self, f: &mut Formatter<'_>) -> Result {
+            match self {
+                TriangleDetails::TwoAngles(a1, a2) => write!(f, "{} {}", a1,a2),
+                TriangleDetails::TwoSides(s1, s2) => write!(f, "{} {}", s1, s2),
+            }
+        }
     }
 
   
     #[derive(Debug)]
     pub struct RightTriangle {
         details: TriangleDetails,
+    }
+
+    impl Display for RightTriangle {
+        fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
+            write!(f, "{}", self.details )
+        }
     }
 
     impl RightTriangle {

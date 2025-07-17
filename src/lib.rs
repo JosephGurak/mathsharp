@@ -35,6 +35,15 @@ pub use self::geometry::geometric_calculations::volumes;
 pub use self::geometry::trigonometry::trig;
 
 
+/////////////////////////////////////////////////////
+
+pub mod linear_algebra {
+    pub mod matrices;
+}
+
+pub use self::linear_algebra::matrices::m2x2;
+pub use self::linear_algebra::matrices::m3x3;
+
 
 /////////////////////////////////////////////////////
 
