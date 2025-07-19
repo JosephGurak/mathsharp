@@ -30,8 +30,37 @@ pub mod m2x2 {
             M2x2 { r1: [self.r1[0], self.r2[0]], r2: [self.r1[1], self.r2[1]] }
         }
 
-        pub fn inverse() {
-            
+
+        // 
+        pub fn inverse(&mut self) -> M2x2 { // return a struct
+            // adj = 1 / determ  
+            // multiply adj by [d -b]  to get inverse matrix 
+            //                 [-c a]
+
+            let adj = 1.0/self.determinant(); 
+            println!("{adj}"); // for testing purposes
+
+            M2x2 
+            {
+                r1: [ adj *self.r2[1], adj*(-1.0 *self.r1[1])], 
+                r2: [adj*(-1.0*self.r2[0]), adj*self.r1[0]]
+            }          
+
+
+        }
+
+        pub fn matrix_addition(&mut self, m2: M2x2) -> M2x2 {
+           M2x2 
+            {   r1: [self.r1[0] + m2.r1[0], self.r1[1] + m2.r1[1]], 
+                r2: [self.r2[0] + m2.r2[0], self.r2[1] + m2.r2[1]]        
+            }
+        }
+
+        pub fn matrix_subtraction(&mut self, m2: M2x2) -> M2x2 {
+           M2x2 
+            {   r1: [self.r1[0] - m2.r1[0], self.r1[1] - m2.r1[1]], 
+                r2: [self.r2[0] - m2.r2[0], self.r2[1] - m2.r2[1]]        
+            }
         }
 
 

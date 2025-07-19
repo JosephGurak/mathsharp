@@ -14,9 +14,12 @@ fn main() {
     println!("Remaining degress for the third angle: {}", tri_test.remaining_degrees());
     
  
-    let mut matrix_test = M2x2::new([2.0, 4.0], [6.0, 7.0]);
-    println!("{:?}", matrix_test.transpose());
+    let mut matrix_test = M2x2::new([5.0, 2.0], [-7.0, -3.0]);
+    println!("{:?}", matrix_test.inverse());
 
+
+    let mut matrix_test2 = M2x2::new([5.0, 2.0], [-7.0, -3.0]);
+    println!("{:?}", matrix_test2.matrix_addition(matrix_test));
     // //
     // let circle_test = perimeter_circle(4.0);
     // println!("{circle_test} units");
