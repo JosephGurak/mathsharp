@@ -63,6 +63,22 @@ pub mod m2x2 {
             }
         }
 
+        pub fn matrix_multiplication(&mut self, m2: M2x2) {
+
+            let a11_1 = (self.r1[0] * m2.r1[0]);
+            let a11_2 = (self.r1[1] * m2.r2[0]);
+            
+            let a12_1 = (self.r1[0] * m2.r1[1]); 
+            let a12_2 = (self.r1[1] * m2.r2[1]);
+
+            println!("a11 parts: \n{:?} {:?} \na12 parts:\n {:?}  {:?}", a11_1, a11_2, a12_1, a12_2);
+            // M2x2 
+            // {
+            //      r1: [(self.r1[0] * m2.r1[0]) + (self.r1[1] * m2.r2[0]), (self.r1[0] * m2.r1[1]) + (self.r1[1] * m2.r2[1])],
+            //      r2: [(self.r2[0] * m2.r1[0]) + (self.r2[1] * m2.r2[0]), (self.r2[0] * m2.r1[1]) + (self.r2[1] * m2.r2[1])] 
+            // }
+        }
+
 
     }
 
