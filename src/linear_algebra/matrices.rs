@@ -102,6 +102,14 @@ pub mod m3x3 {
             }
         }
 
+        // using shortcut method here
+        pub fn determinant(&self) -> f32 {
+            (
+                (self.r1[0] * self.r2[1] * self.r3[2]) + (self.r1[1]*self.r2[2]*self.r3[0]) + (self.r1[2]*self.r2[0]*self.r3[1])
+            ) - (
+                (self.r1[2]*self.r2[1]*self.r3[0])+(self.r1[0]*self.r2[2]*self.r3[1])+(self.r1[1]*self.r2[0]*self.r3[2])
+            )
+        }
 
 
 
