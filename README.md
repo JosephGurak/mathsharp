@@ -21,43 +21,17 @@ fn main() {
 }
 ```
 ## News
-    Version 0.5.0 brings the rest of the Block 1 update content along with the April update in Block 2. 
-    Behind the scenes mathsharp is developing tools for the future algebra and calculus Blocks. 
+    Version 0.6.0 brings 
 
 ## Roadmap
  
 
-MathSharp aims to add areas of mathematics in blocks each with consistent monthly updates.
+MathSharp aims to add improvements with consistent monthly updates.
 
-### BLOCK 1:  Unit Conversions
-
-    March 1st Update:
-    
-    length, mass, volume, area, time, pressure, energy, power
-
-
-### BLOCK 2: Geometric Calculations
-
-    April 1st Update: 
-    
-    perimeter, area, volume, triangles, circles, quadrilaterals
-                
-    May 1st Update:
-    
-    trigonometry
-
-
-### BLOCK 3: Algebra 
-
-    June 1st Update: TBD
-                        
-
-
-
-#### More Blocks will be added and existing ones updated as MathSharp progresses towards its goal
+                       
 
 ### Website On its way! 
-Around the time of BLOCK 3 MathSharp website will be launched using the Dioxus framework to create a place for more documentation, math resources and a special surprise!
+MathSharp website will be launched using the Dioxus framework to create a place for more documentation, math resources and a special surprise!
 
 
 
