@@ -25,6 +25,7 @@ pub use self::unit_conversions::temperature::kelvin_fahrenheit;
 /////////////////////////////////////////////////////
 pub mod geometry {
     pub mod geometric_calculations;
+    pub mod trigonometry;
     
 }
 
@@ -32,7 +33,7 @@ pub use self::geometry::geometric_calculations::perimeter;
 pub use self::geometry::geometric_calculations::areas;
 pub use self::geometry::geometric_calculations::volumes;
 
-
+pub use self::geometry::trigonometry::*;
 
 
 /////////////////////////////////////////////////////
