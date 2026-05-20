@@ -4,8 +4,21 @@ use mathsharp::length::inches_feet;
 use mathsharp::perimeter::*;
 
 
+use mathsharp::m2x2::*;
+
+// remove main convert testing to actual test file
+
 fn main() {
 
+    
+ 
+    let mut matrix_test = M2x2::new([7.0, 5.0], [6.0, 3.0]);
+    //println!("{:?}", matrix_test.inverse());
+
+
+    let mut matrix_test2 = M2x2::new([2.0, 1.0], [5.0, 1.0]);
+    println!("{:?}", matrix_test.matrix_multiplication(matrix_test2));
+    // //
     let circle_test = perimeter_circle(4.0);
     println!("{circle_test} units");
 

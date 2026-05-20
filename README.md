@@ -20,46 +20,22 @@ fn main() {
     println!("{} fahrenheit is equal to {} Celsius", from_fahrenheit, to_celsius);   
 }
 ```
-## News
-    In an effort to add more versatility to mathsharp, V0.6.0 release 
-    has been pushed back one week. V0.6.0 will bring generics to all current functions 
-    along with the start of the trigonometry module. 
+## Latest Release
+    Version 0.6.0 brings 
+    -standardized on f64
+    -our start to trigonometric solving
+    -Basic Matrix operations for 2x2 and 3x3
     
+    Bug Fixes:
+    - 3 fucntions were incorrectly using a division operation instead of multiplication
+    length::yards_feet
+    length::yards_inches
+    volume::gallon_to_fluid_ounces
 
-## Roadmap
- 
-
-MathSharp aims to add areas of mathematics in blocks each with consistent monthly updates.
-
-### BLOCK 1:  Unit Conversions
-
-    March 1st Update:
-    
-    length, mass, volume, area, time, pressure, energy, power
-
-
-### BLOCK 2: Geometric Calculations
-
-    April 1st Update: 
-    
-    perimeter, area, volume, triangles, circles, quadrilaterals
-                
-    May 1st Update: ( Delayed to May 8th)
-    
-    trigonometry
-
-
-### BLOCK 3: Algebra 
-
-    June 1st Update: TBD
-                        
-
-
-
-#### More Blocks will be added and existing ones updated as MathSharp progresses towards its goal
+                       
 
 ### Website On its way! 
-Around the time of BLOCK 3 MathSharp website will be launched using the Dioxus framework to create a place for more documentation, math resources and a special surprise!
+MathSharp website will be launched to create a place for more documentation, math resources and a special surprise!
 
 
 

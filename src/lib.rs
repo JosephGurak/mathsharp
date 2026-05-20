@@ -23,13 +23,29 @@ pub use self::unit_conversions::temperature::kelvin_celsius;
 pub use self::unit_conversions::temperature::kelvin_fahrenheit;
 
 /////////////////////////////////////////////////////
-mod geometric_calculations;
+pub mod geometry {
+    pub mod geometric_calculations;
+    pub mod trigonometry;
+    
+}
 
-pub use self::geometric_calculations::perimeter;
-pub use self::geometric_calculations::areas;
-pub use self::geometric_calculations::volumes;
+pub use self::geometry::geometric_calculations::perimeter;
+pub use self::geometry::geometric_calculations::areas;
+pub use self::geometry::geometric_calculations::volumes;
+
+pub use self::geometry::trigonometry::*;
 
 
+/////////////////////////////////////////////////////
 
+pub mod linear_algebra {
+    pub mod matrices;
+}
+
+pub use self::linear_algebra::matrices::m2x2;
+pub use self::linear_algebra::matrices::m3x3;
+
+
+/////////////////////////////////////////////////////
 
 
