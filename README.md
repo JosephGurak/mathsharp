@@ -20,18 +20,22 @@ fn main() {
     println!("{} fahrenheit is equal to {} Celsius", from_fahrenheit, to_celsius);   
 }
 ```
-## News
+## Latest Release
     Version 0.6.0 brings 
-
-## Roadmap
- 
-
-MathSharp aims to add improvements with consistent monthly updates.
+    -standardized on f64
+    -our start to trigonometric solving
+    -Basic Matrix operations for 2x2 and 3x3
+    
+    Bug Fixes:
+    - 3 fucntions were incorrectly using a division operation instead of multiplication
+    length::yards_feet
+    length::yards_inches
+    volume::gallon_to_fluid_ounces
 
                        
 
 ### Website On its way! 
-MathSharp website will be launched using the Dioxus framework to create a place for more documentation, math resources and a special surprise!
+MathSharp website will be launched to create a place for more documentation, math resources and a special surprise!
 
 
 
